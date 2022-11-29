@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>turismo sur</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+    <div class="containertitulo">
+        <h1 >TURISMO SUR</h1>
+        <nav>
+            <a href="#creador">creador</a>
+            <a href="#sur">sur </a>
+            <a href="#informacion">informacion </a>
+        </nav>
+    </div>
+    
+    <section>
+            
+        
+    </article>
+    
+    <section>
+        <h2>CONOCE EL SUR</h2>
+        <article class="grid-container" >
+            
+            <a href="#" id="Ushuaia" class="abrir"><img src="./IMG/descarga (1).jpg" alt="USHUAIA" ></a>
+            <a href="#" id="Bariloche" class="abrir"><img src="./IMG/bariloche.jpg" alt="BARILOCHE"></a>
+            <a href="#" id="Calafate" class="abrir"><img src="./IMG/calafate.jpg" alt="EL CALAFATE"></a>
+            
+        </article>
+    </section>    
+    <section id="mimodal" class="modal">
+        <div class="flex" id="flex">
+            <div class="contenido-modal">
+                <header class="modal-header flex">
+                    <h2 id="tituloModal"></h2>
+                    <span class="close" id="close">&times</span>
+                </header>
+                <article id="contenidoModal" class="modalbody"></article>
+                <footer class="modal-footer">
+                    <h3 >turismo sur</h3>
+                </footer>
+
+            </div>
+        </div>
+    </section>
+  
+    
+    <section id= informacion class=containerformulario>
+        <div  class="containerform">
+            <form>
+              <fieldset class="fieldset">
+                <legend >informacion</legend>   
+                <label for="name"></label>
+                <input type="text" id="name" name="nombre" placeholder="nombre">
+                <p id="nameerror" class="ocultarerror">debe ingresar un nombre</p>
+                <label for="apellido"></label>
+                <input type="text" id="apellido" placeholder="apellido">
+                <p id="apellidoerror" class="ocultarerror">debe ingresar un apellido</p>
+                <label for="ciudad"></label>
+                <select id="ciudad" name="ciudad" placeholder="ciudad"> 
+                    <option value="bariloche">bariloche</option>
+                    <option value="calafate">calafate</option>
+                 <option value="ushuaia">ushuaia</option>
+                 
+                </select>
+                <p id="ciudaderror" class="ocultarerror">debe ingresar una ciudad</p>
+            </fieldset>
+            <label for="comentario"></label>
+            <textarea name="comentario" id="comentario" placeholder="escribi tu consulta"></textarea>
+            <p id="comentarioerror" class="ocultarerror">debe ingresar algo</p>
+        </form>
+        <button onclick= "enviar()">submit</button>
+    </div>
+</section>    
+    <footer id="creador"class=containerfooter >
+        <h4>Fernando Colloca</h3>
+            <h4>Collocafernando@gmail.com</h3>
+            </footer >  
+            
+            <script src="./js/sur.js"></script>
+        </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>turismo argentina</title>
+    <link rel="stylesheet" href="./estilos.css">
+    
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="#contenido">contenido</a>
+            <a href="contenido2">contenido2 </a>
+            <a href="contenido2">contenido2 </a>
+            <a href="informacion">informacion </a>
+        </nav>
+    </div>
+    
+    <section>
+        <h1 class="containertitulo">TURISMO ARGENTINA</h1>
+        <article class="containerflexcenter">
+            
+            <h1></h1>
+            
+            
+        </article>
+
+    <section>
+        <h2>CONOCE EL SUR</h2>
+        <article class="grid-container">
+            
+                <a href="http://turismoushuaia.com">
+                <img src="./IMG/ushuaia.jpg" alt="USHUAIA" class="galeria">
+                <p><b>USHUAIA</b></p>
+                </a>
+            
+                <a href="http://www.barilocheturismo.gob.ar">
+                <img src="./IMG/bariloche.jpg" alt="BARILOCHE" class="galeria">
+                <p><b>BARILOCHE</b></p>
+                </a>
+
+                
+            
+                
+              
+                <a href="http://www.elcalafate.tur.ar">
+                <img src="./IMG/calafate.jpg" alt="EL CALAFATE" class="galeria">
+                <p><b>EL CALAFATE</b></p>
+                </a>
+            
+            
+            
+        </article>
+    </section>  
+    <section class=containerformulario>
+        <div  class="containerform">
+            <form>
+              <fieldset class="fieldset">
+                <legend >informacion</legend>   
+                <label for="name"></label>
+                <input type="text" id="name" name="nombre" placeholder="nombre">
+                <label for="apellido"></label>
+                <input type="text" id="apellido" placeholder="apellido">
+                <label for="ciudad"></label>
+                <select id="ciudad" name="ciudad" placeholder="ciudad"> 
+                 <option value="bariloche">bariloche</option>
+                 <option value="calafate">calafate</option>
+                 <option value="mendoza">mendoza</option>
+                 <option value="misiones">misiones</option>
+                 <option value="san juan">san juan</option>
+                 <option value="salta">salta</option>
+                </select>
+              </fieldset>
+                <label for="comentario"></label>
+                <textarea name="comentario" id="comentario" placeholder="escribi tu consulta"></textarea>
+                
+            </form>
+            <button onclick= "enviar()">submit</button>
+        </div>
+    </section>
+
+            
+
+</body>
+</html>
